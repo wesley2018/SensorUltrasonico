@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+	tools:context="com.example.controle_remoto_app.ControleActivity" 
+	android:background="#FFFFFF">
+	
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:src="@drawable/logo" />
+    
+    <LinearLayout 
+        		android:id="@+id/linearLayoutDistancia" 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal"
+				android:paddingTop="350px">
+	<TextView 
+
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="40sp"
+			android:textColor="#00BFFF"
+			android:textStyle="bold"
+			android:text="DISTÂNCIA" />
+		</LinearLayout>
+		
+    <LinearLayout 
+        		android:id="@+id/linearLayoutDistanciaValor" 
+        		android:orientation="horizontal" 
+    		    android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:gravity="center_horizontal">
+	<TextView
+	    android:id="@+id/tvDistancia"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="0m"
+	    android:textSize="50sp"
+	    android:textColor="#00BFFF"
+	    android:textStyle="bold" >
+		</TextView>
+		</LinearLayout>		
+</LinearLayout>
